@@ -13,7 +13,7 @@ Concernant les TP, j’ai rencontré un problème technique avec mon image Pharo
 
 ## TP Chess
 
-J’ai avancé sur le *Refactor piece rendering*J’ai nettoyé le code qui choisit la lettre à afficher pour chaque pièce, en remplaçant les conditions imbriquées par deux approches différentes : le double dispatch (la pièce et la case se demandent mutuellement l’information) et le table dispatch (une table associe directement chaque pièce et couleur à sa lettre).
+J’ai avancé sur le *Refactor piece rendering* : j’ai nettoyé le code qui choisit la lettre à afficher pour chaque pièce, en remplaçant les conditions imbriquées par deux approches différentes : le double dispatch (la pièce et la case se demandent mutuellement l’information) et le table dispatch (une table associe directement chaque pièce et couleur à sa lettre).
 
 Le double dispatch respecte mieux l’encapsulation (chaque pièce porte sa propre donnée) , tandis que le table dispatch centralise tout au même endroit mais oblige la case à connaître toutes les classes de pièces
 
